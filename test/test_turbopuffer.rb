@@ -9,7 +9,7 @@ class TestTurbopuffer < Minitest::Test
   end
 
   def test_usage_example
-    tpuf = Turbopuffer::Client.new(ENV["TURBOPUFFER_API_KEY"])
+    tpuf = Turbopuffer::Client.new
 
     ns = tpuf.namespace("test-#{SecureRandom.uuid}")
 
